@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- layer-list用于多种颜色叠加 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置进度条背景 添加inset属性可以避免thumb被挤压，不加clip(裁剪 → 默认:0完全裁剪 - 10000完全不裁剪)
+    效果否则无法显示-->
+    <item android:id="@android:id/background">
+        <inset android:inset="5dp">
+            <shape>
+                <solid android:color="@color/custom_gray" />
+                <corners android:radius="3dp"/>
+            </shape>
+        </inset>
+
+    </item>
+
+    <!-- 设置进度条加载完成颜色 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <inset android:inset="5dp">
+                <shape>
+                    <solid android:color="@color/custom_gray_success" />
+                    <corners android:radius="3dp"/>
+                </shape>
+            </inset>
+        </clip>
+    </item>
+
+    <!-- 设置进度条播放后的颜色 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <inset android:inset="5dp">
+                <shape>
+                    <solid android:color="@color/custom_red" />
+                    <corners android:radius="3dp"/>
+                </shape>
+            </inset>
+        </clip>
+    </item>
+
+</layer-list>

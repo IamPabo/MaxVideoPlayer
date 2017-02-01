@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoPlayerDemo</string>
+    <!-- 默认开始时间 -->
+    <string name="time_start">00:00</string>
+    <!-- 默认结束时间 -->
+    <string name="time_end">00:00</string>
+</resources>
